@@ -1,7 +1,7 @@
 var path = require('path');
 
 const config = {
-  entry: './entry.js',
+  entry: './entry.jsx',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
@@ -9,9 +9,12 @@ const config = {
   module: {
     loaders: [
       {
-        test: /\.js$/,
+        test: /\.jsx$/,
+        loader: 'babel-loader',
         exclude: /(node_modules|bower_components)/,
-        loader: 'babel-loader?presets[]=es2015',
+        query: {
+          presets: ['es2015']
+        }
       }
     ]
   }

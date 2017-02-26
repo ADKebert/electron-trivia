@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import RoundContainer from './round/round-container.jsx';
 
 ReactDOM.render(
-  <h1>Hello React!</h1>,
+  <RoundContainer />,
   document.getElementById('root')
 );
