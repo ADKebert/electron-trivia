@@ -1,5 +1,13 @@
 {
-  "name"    : "pub-trivia",
-  "version" : "0.1.0",
-  "main"    : "main.js"
+  "name": "pub-trivia",
+  "version": "0.1.0",
+  "description": "pub trivia app with react and electron",
+  "repository": "https://github.com/ADKebert/electron-trivia",
+  "main": "main.js",
+  "devDependencies": {
+    "webpack": "^2.2.1"
+  },
+  "scripts": {
+    "build": "webpack"
+  }
 }
